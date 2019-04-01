@@ -1,5 +1,5 @@
 #curriculo {
-    margin-right: 60%
+    margin-right: 55%
   }
   a{
     color: white;
@@ -36,22 +36,6 @@
   .ico{
     max-width: 40%;
   }
-  .corrigeNav{
-    color: #eeeeee;
-  }
-  #sobreMim{
-    display: flex;
-    border: solid 1px rgb(180, 180, 180);
-    border-radius: 5%;
-    width: 90%;
-    margin-left: 5%;
-    padding: 2%;
-    font-family: sans-serif;
-  }
-  #sobre{
-    width: 49%;
-    margin-right: 4%;
-  }
   #info{
     margin-left: 3%;
     display: flex;
@@ -60,7 +44,7 @@
   
   #perguntas,#respostas{
     display: inline-block;
-    width: 49%;
+    width: 45%;
   }
   .heading{
     margin-bottom: 3%;
@@ -69,21 +53,6 @@
   .xp{
     margin-left: 9%;
     font-family: sans-serif;
-  }
-  .resumoE{
-    display: flex;
-    width: 66%;
-    border: solid 1px rgb(180, 180, 180);  
-    margin-left: 9%;
-    margin-top: 4%;
-    border-radius: 3%;
-    text-align: center;
-  }
-  .funcao{
-    border-left: solid 3px rgb(180, 180, 180);
-    width: 64%;
-    
-    padding: 1%;
   }
   .empresa{
     width: 36%;
