@@ -20,14 +20,22 @@ Criação do meu portifólio profissional.
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="CSS/bootstrap/compiler/bootstrap.css">
 
     <link rel="stylesheet" href="CSS/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>Portifólio</title>
+
+    <link rel="shortcut icon" href="imagens/skill.jpg"/>
+    <meta name="description" content="Veja o meu curriculum virtual">
+    <meta property="og:image" content="https://vitorportifolio.herokuapp.com/imagens/esteticar.jpeg">
+
+
     <link rel="shortcut icon" href="imagens/icones/titulo.png"/>
 
   </head>
@@ -47,16 +55,19 @@ Criação do meu portifólio profissional.
                     <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                         <ul class="navbar-nav" id="myTab" role="tablist">
                             <li id="homeli" class="nav-item">
-                              <a class="nav-link" id="messages-tab" href="#messages" aria-controls="messages" aria-selected="false">Sobre Mim</a>
+                              <a class="nav-link" id="messages-tab" href="#sobreM" aria-controls="messages" aria-selected="false">Sobre Mim</a>
                             </li>
                             <li class="nav-item">
-                              <a  class="nav-link" id="profile-tab" href="#profile" aria-controls="profile" aria-selected="false">Habilidades</a>
+                              <a  class="nav-link" id="profile-tab" href="#habilidades" aria-controls="profile" aria-selected="false">Habilidades</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="settings-tab" href="#settings" aria-controls="settings" aria-selected="false">Experiencias</a>
+                              <a class="nav-link" id="settings-tab" href="#experiencias" aria-controls="settings" aria-selected="false">Experiencias</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="Portifolio-tab" href="#Portifolio" aria-controls="Portifolio" aria-selected="false">Portifólio</a>
+                              <a class="nav-link" id="Portifolio-tab" href="#portifolio" aria-controls="Portifolio" aria-selected="false">Portifólio</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="Contato-tab" href="#contato" aria-controls="Contato" aria-selected="false">Contato</a>
                             </li>
                           </ul>
                     </div>
@@ -67,49 +78,56 @@ Criação do meu portifólio profissional.
               </div>
               
             <div  class="tab-content">
-                <div class="tab-pane active" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                  <p class="corrigeNav">.</p>
-                  <p class="corrigeNav">.</p>
-                    <section id="sobreMim">
-                      <div id="sobre">
-                        <h2>Sobre</h2>
-                        <p>
-                          Olá, me chamo Vitor Santos do Nascimento.<br><br>
-                          Atualmente estou cursando o ultimo semestre do curso superior de Análise e Desenvolvimento de Sistemas, Fornecido
-                          pelo Instituto Federal de Mato Grosso do Sul, busco um emprego na área do desenvolvimento para que possa
-                          colocar minhas habilidades em pratica e aprender cada vez mais, contribuindo assim com os meus interesses
-                          e consequentemente com os interesses da empresa.
-                        </p>
-                      </div>
-                      
-                        
-                        
-                          
-                          <div id="info">
-                          
-                        <div id="perguntas">
-                          <h2 id="h2Info">Informações</h2>
-                          <p>Data de Nascimento:</p>
-                          <p>Natural de:</p>
-                          <p>Estado Civil:</p>
-                          <p>E-mail:</p>
-                          <p>Telefone:</p>
-                          <p>Endereço:</p>
+                    <section>
+                        <h2 id="sobreM" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Sobre Mim</h2>
+                        <hr class="featurette-divider">
+    
+                        <div class="row featurette">
+                          <div class="col-md-7 order-md-2">
+                            <p class="lead">Olá, me chamo Vitor Santos do Nascimento.<br><br>
+                              Atualmente estou cursando o ultimo semestre do curso superior de Análise e Desenvolvimento de Sistemas, Fornecido
+                              pelo Instituto Federal de Mato Grosso do Sul, busco um emprego na área do desenvolvimento para que possa
+                              colocar minhas habilidades em pratica e aprender cada vez mais, contribuindo assim com os meus interesses
+                              e consequentemente com os interesses da empresa.
+                            </p>
+                          </div>
+                          <div class="col-md-5 order-md-1">
+                            <img class="d-block w-100" style="height:100%;width:100%;" src="imagens/vitor1.jpg" alt="">
+                          </div>
                         </div>
-                        <div id="respostas">
-                          <br><br>
-                          <p>16/11/1996</p>
-                          <p>São Gabriel do Oeste</p>
-                          <p>Solteiro</p>
-                          <p>vitor7_sn@hotmail.com</p>
-                          <p>(67) 99138-2836</p>
-                          <p>Rua Pirambóia, numero 660, Rosana - SP</p>
+                        <hr class="featurette-divider">
+                        <h2 id="informacoes" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Informações</h2>
+                        <hr class="featurette-divider">
+    
+                        <div class="row featurette">
+                          <div class="col-md-7">
+                                <div style="margin-left:3%;" id="perguntas">
+                                  <p class = "lead">Data de Nascimento:</p>
+                                  <p class ="lead">Natural de:</p>
+                                  <p class = "lead">Estado Civil:</p>
+                                  <p class = "lead">E-mail:</p>
+                                  <p class = "lead">Telefone:</p>
+                                  <p class = "lead">Endereço:</p>
+                                </div>
+                                <div id="respostas">
+                                  <br><br>
+                                  <p class = "lead">16/11/1996</p>
+                                  <p class = "lead">São Gabriel do Oeste</p>
+                                  <p class = "lead">Solteiro</p>
+                                  <p class = "lead">vitor7_sn@hotmail.com</p>
+                                  <p class = "lead">(67) 99138-2836</p>
+                                  <p class = "lead">R. Takashi Tuda, 763-Nova Andradina/MS</p>
+                                </div>
+                          </div>
+                          <div class="col-md-5">
+                            <img class="d-block w-100" style="height:90%;width:100%;" src="imagens/informacoes.jpg" alt="">
+                          </div>
                         </div>
-                      </div>             
                     </section>
-                  </div>
+                    <hr class="featurette-divider">
+                    <h2 id="habilidades" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Habilidades</h2>
+                    <hr class="featurette-divider">
                   <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <p class="corrigeNav" style="font-size: 140%;">A</p>
                       <section id="services" style="background-color: #eee">
                           <div class="container">
                             <div class="row services">
@@ -122,7 +140,7 @@ Criação do meu portifólio profissional.
                                         <img class="ico" src="imagens/icones/binario.png" alt="">
                                       </div>
                                       <h4>Programação</h4>
-                                      <p>Possuo conhecimento em várias linguagens de programação, estruturação e estilização.</p>
+                                      <p class = "lead">Possuo conhecimento em várias linguagens de programação, estruturação e estilização.</p>
                                       <ul>
                                           <li>C</li>
                                           <li>Java</li>
@@ -140,7 +158,7 @@ Criação do meu portifólio profissional.
                                         <img class="ico" src="imagens/icones/BD.png" alt="">
                                       </div>
                                       <h4>Banco de Dados</h4>
-                                      <p>
+                                      <p class = "lead">
                                          Tenho conhecimento em MySQL e postigres, já fiz vários
                                          projetos integrados á banco de dados, alguns estão disponiveis em meu portifólio.
                                       </p>
@@ -152,7 +170,7 @@ Criação do meu portifólio profissional.
                                         <img class="ico" src="imagens/icones//suporte.png" alt="">
                                       </div>
                                       <h4>Suporte Técnico</h4>
-                                      <p>
+                                      <p class = "lead">
                                         Durante 10 meses fiz estágio na empresa Ganso Sistemas, exercendo a função de análista de suporte,
                                         possuo experiência com formatação e manutenção de computadores.
                                       </p>
@@ -164,7 +182,7 @@ Criação do meu portifólio profissional.
                                           <img class="ico" src="imagens/icones/equipe.png" alt="">
                                         </div>
                                         <h4>Trabalho em equipe</h4>
-                                        <p>
+                                        <p class = "lead">
                                           Possuo uma excelente comunicação e facilidade em me relacionar, buscando sempre
                                           a melhor forma de contribuir com o grupo para assim acharmos juntos melhores soluções para nossos 
                                           clientes.
@@ -177,7 +195,7 @@ Criação do meu portifólio profissional.
                                             <img class="ico" src="imagens/icones/negocio.png" alt="">
                                           </div>
                                           <h4>Negócios</h4>
-                                          <p>
+                                          <p class = "lead">
                                             Possuo experiencia com o varejo, sendo que ja trabalhei durante 1 ano como operador
                                             de caixa em uma grande empresa e também ja trabalhei por 10 meses em uma software house
                                             que desenvolve softwares para varejo, sendo assim conheço tanto o lado do cliente quanto o lado dos
@@ -191,7 +209,7 @@ Criação do meu portifólio profissional.
                                               <img class="ico" src="imagens/icones/academico.png" alt="">
                                             </div>
                                             <h4>Formação Acadêmica</h4>
-                                            <p>
+                                            <p class = "lead">
                                                 Cursando ensino superior (análise e desenvolvimento de sistemas - 6 ° semestre). <br>
                                                 Excel Básico (30 horas) - Senac. <br>
                                                 Curso petróleo e gás – 120 horas – univercamp – 2014-2015 (sendo 30 horas em auxiliar de logística).<br>
@@ -205,109 +223,155 @@ Criação do meu portifólio profissional.
                           </div>
                         </section>
                   </div>
-                  
-                  <div class="tab-pane active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                    <p class="corrigeNav" style="font-size: 135%;">.</p>
-                      <h1 class="xp">Experiências</h1>
-                      <div class="resumoE">
-                            <div class="empresa">
-                              <p class="tempoServico">DEZEMBRO 2015 - NOVEMBRO 2016</p>
-                              <p class="nomeEmpresa">Hipermercado Extra</p><br>
-                            </div>
-                              <div class="funcao">
-                                <p class="tituloFuncao">Operador de hipermercado</h5>
-                                <p>
+                      <h2 id="experiencias" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Experiências</h2>
+                        
+                      <hr class="featurette-divider">
+    
+                        <div class="row featurette"   style="width: 95%;margin-left: 2%; text-align: center;">
+                          <div class="col-md-7 order-md-2">
+                              <p class="nomeEmpresa">Hipermercado Extra</p>
+                              <p class="tituloFuncao">Operador de hipermercado</h5>
+                                <p class = "lead">
                                   Sendo como função primaria operar o caixa, atuando também como
                                   repositor em áreas como mercearia e bazar - experiência em atendimento ao cliente.
                                 </p>
-                              </div>
-
-                    </div>
-                    <div class="resumoE">
-                      <div class="empresa">
-                        <p class="tempoServico">FEVEREIRO 2018 - DEZEMBRO 2018</p>
-                        <p class="nomeEmpresa">Sistemas Ganso</p><br>
-                      </div>
-                        <div class="funcao">
-                          <p class="tituloFuncao">Estágiario</h5>
-                          <p>
-                            Exercendo a função de análista de suporte, nesse emprego aprendi muito sobre tributação e sobre o funcionamento de uma
-                            software house, pude aprimorar meus conhecimentos sobre o varejo e adiquiri mais qualidade em minha didatica sendo sempre
-                            bem avaliado pelos clientes e por meus superiores.   
-                          </p>
-                        </div>
-
-                    </div>
-                    <div class="resumoE">
-                      <div class="empresa">
-                        <p class="tempoServico">FEVEREIRO 2018 - até o momento atual</p>
-                        <p class="nomeEmpresa">Instituto Federal de Mato Grosso do Sul</p><br>
-                      </div>
-                        <div class="funcao">
-                          <p class="tituloFuncao">Monitor do curso</h5>
-                          <p>
-                            Exercendo a função de monitor do curso de análise e desenvolvimento de sistemas, retirando duvidas de alunos
-                             e auxiliando em atividades em sala de aula, ao exercer essa atividade pude melhorar ainda 
-                            mais a minha didática e minhas habilidades de desenvolvimento e análise de sistemas.
-                          </p>
-                        </div>
-
-                    </div>
-                  <div class="tab-pane active" id="Portifolio" role="tabpanel" aria-labelledby="portifolio-tab">
-                    <h1 class="xp">Portifolio</h1>
-                    <div class="ts">
-                    <div class="cardP" class="card mb-3" style="max-width: 540px;border: solid 1px rgb(180, 180, 180);">
-                        <div  class="row no-gutters">
-                          <div style=" padding-top: 4%; border-right: solid 4px rgb(180,180,180);" class="col-md-4">
-                            <img src="imagens/teste7.png" class="card-img" alt="">
+                                
+                                <p class="tempoServico">DEZEMBRO 2015 - NOVEMBRO 2016</p>
                           </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Notação Polonesa</h5>
-                              <p class="card-text">Esse é um projeto desenvolvido com a linguagem de programação C, foi dado foco no uso dos ponteiros.</p><br><br>
-                              <p class="card-text"><small class="text-muted">Desenvolvido por Vitor Santos em 08/2017</small></p>
-                            </div>
+                          <div class="col-md-5 order-md-1">
+                                  
+                            <img class="d-block w-100" style="height:90%;width:100%;" src="imagens/extra.jpg" alt="">
+                          
                           </div>
                         </div>
-                      </div>
-                      <div class="cardP" class="card mb-3" style="max-width: 540px;border: solid 1px rgb(180, 180, 180);">
-                          <div class="row no-gutters">
-                            <div style=" padding-top: 4%; border-right: solid 4px rgb(180,180,180);" class="col-md-4">
-                              <img src="imagens/teste9.png" class="card-img" alt="">
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Cadastro de Lembretes</h5>
-                                <p class="card-text">Esse é um projeto foi desenvolvido com a linguagem de programação PHP, foi utilizado a linguagem
-                                 de estruturação HTML e de estilização CSS, foi utilizado o framework Bootstrap.
+                        <hr class="featurette-divider">
+
+
+                        <hr class="featurette-divider">
+    
+                        <div class="row featurette"   style="width: 95%;margin-left: 2%; text-align: center;">
+                          <div class="col-md-7 order-md-2">
+                              <p class="nomeEmpresa">Sistemas Ganso</p>
+                              <p class="tituloFuncao">Estágiario</h5>
+                                <p class = "lead">
+                                    Exercendo a função de análista de suporte, nesse emprego aprendi muito sobre tributação e sobre o funcionamento de uma
+                                    software house, pude aprimorar meus conhecimentos sobre o varejo e adiquiri mais qualidade em minha didatica sendo sempre
+                                    bem avaliado pelos clientes e por meus superiores.
                                 </p>
-                                <p class="card-text"><small class="text-muted">Desenvolvido por Vitor Santos em 08/2018</small></p>
+                                
+                                <p class="tempoServico">FEVEREIRO 2018 - DEZEMBRO 2018</p>
+                          </div>
+                          <div class="col-md-5 order-md-7">
+                            <img class="d-block w-100" style="height:80%;width:100%;" src="imagens/ganso.png" alt="">
+                          </div>
+                        </div>
+                        <hr class="featurette-divider">
+                        
+                        <hr class="featurette-divider">
+
+                        <div class="row featurette"   style="width: 95%;margin-left: 2%; text-align: center;">
+                            <div class="col-md-7 order-md-2">
+                                <p class="nomeEmpresa">Instituto Federal de Mato Grosso do Sul</p>
+                                <p class="tituloFuncao">Monitor do curso</h5>
+                                  <p class = "lead">
+                                      Exercendo a função de monitor do curso de análise e desenvolvimento de sistemas, retirando duvidas de alunos
+                                       e auxiliando em atividades em sala de aula, ao exercer essa atividade pude melhorar ainda 
+                                      mais a minha didática e minhas habilidades de desenvolvimento e análise de sistemas.
+                                    </p>
+                                  <p class="tempoServico">FEVEREIRO 2018 - AGOSTO 2018</p>
+                            </div>
+                            <div class="col-md-5 order-md-1">
+                                    
+                              <img class="d-block w-100" style="height:100%;width:100%;" src="imagens/ifms.jpg" alt="">
+                            
+                            </div>
+                          </div>
+                       <hr class="featurette-divider">
+                       <h2 id="portifolio" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Portifólio</h2>
+                       <hr class="featurette-divider">
+
+                       <div class="album py-5 bg-light">
+                          <div class="container">
+                      
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <a target="_blank" href="https://github.com/VsN7/NotacaoPolonesa"><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imagens/poloneza.png" alt=""></a>
+                                <div class="card-body">
+                                    <p class="card-text"><h3>Notação Polonesa</h3><br>Trabalho individual de faculdade desenvolvido em linguagem C.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a target="_blank" href="https://github.com/VsN7/NotacaoPolonesa"><button type="button" class="btn btn-sm btn-outline-secondary">Mais detalhes</button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
+                              <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                  <a target="_blank" href="https://github.com/VsN7/esteticar" ><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imagens/esteticar.jpeg" alt=""></a>
+                                  <div class="card-body">
+                                      <p class="card-text"><h3>Estéticar</h3><br>Estre projeto é um site e tem como objetivo divulgar a empresa Estéticar</p>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group">
+                                            <a target="_blank" href="https://github.com/VsN7/esteticar" ><button type="button" class="btn btn-sm btn-outline-secondary">Mais detalhes</button></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                      
+                                    <div class="col-md-4">
+                                          <div class="card mb-4 shadow-sm">
+                                              <div width="100%" height="225">
+                                                  <a target="_blank" href="https://github.com/VsN7/Portifolio"><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imagens/skill.jpg" alt=""></a>
+                                              </div>
+                                            <div class="card-body">
+                                                <p class="card-text"><h3>Portifólio</h3><br>Estre projeto é um site e tem como objetivo divulgar minhas habilidades</p>
+                                              <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                  <a target="_blank" href="https://github.com/VsN7/Portifolio"><button type="button" class="btn btn-sm btn-outline-secondary">Mais detalhes</button></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="card mb-4 shadow-sm">
+                                                <div width="100%" height="225">
+                                                    <a target="_blank" href="https://github.com/VsN7/JogoDaVelha" ><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imagens/jogoVelha.PNG" alt=""></a>
+                                                </div>
+                                              <div class="card-body">
+                                                  <p class="card-text"><h3>Jogo da velha</h3><br>Estre projeto é um jogo da velha com foco em JavaScript</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                  <div class="btn-group">
+                                                    <a target="_blank" href="https://github.com/VsN7/JogoDaVelha" ><button type="button" class="btn btn-sm btn-outline-secondary">Mais detalhes</button></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                              
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="ts">
-                        <div class="cardP" class="card mb-3" style="max-width: 540px;border: solid 1px rgb(180, 180, 180);">
-                          <div class="row no-gutters">
-                            <div style=" padding-top: 4%; border-right: solid 4px rgb(180,180,180);" class="col-md-4">
-                              <img src="imagens/teste9.png" class="card-img" alt="">
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Jogo de damas</h5>
-                                <p class="card-text">Esse é um projeto desenvolvido com a linguagem de programação Java, foi utilizado a linguagem
-                                 de estruturação HTML e de estilização CSS, foi utilizado o framework Bootstrap.
-                                </p>
-                                <p class="card-text"><small class="text-muted">Desenvolvido por Vitor Santos em 08/2018</small></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                </div>
-                </div>
-              </div>
+    
+                       <hr class="featurette-divider">
+                       <h2 id="contato" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;" class="featurette-heading">Contato</h2>
+                       <hr class="featurette-divider">
+
+      <footer style="text-align: center;padding: 4%; margin-top:3%;">
+
+        <p class="lead" style="margin-bottom:6%; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Telefone: (67) 99138-2836</p>
+
+        <a style="color:#212529;" href="https://github.com/VsN7" target="_blank"><i style="font-size:300%; " class="fab fa-github-square" ></i></a>   <a style="color:#212529;" href="https://www.linkedin.com/in/vitor-santos-6290b2182/"  target="_blank"><i style="font-size:300%;margin-left: 4%;" class="fab fa-linkedin-in"></i> </a>   <a style="color:#212529;" target="_blank" href="https://www.facebook.com/profile.php?id=100012323829171"><i style="font-size:300%;margin-left: 4%;" class="fab fa-facebook-f"></i></a><a style="color:#212529;" href="#informacoes" target="_blank"><i style="font-size:300%;margin-left: 4%;" class="fas fa-at"></i></a> 
+      
+        <p style="margin-top:4%; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">©Desenvolvido por Vitor Santos do Nascimento</p>
+      </footer>
+
+
+
         
         
         <!-- Tab panes -->
