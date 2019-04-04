@@ -36,29 +36,6 @@
   .ico{
     max-width: 40%;
   }
-  #info{
-    margin-left: 3%;
-    display: flex;
-    width: 49%;
-  }
-  
-  #perguntas,#respostas{
-    display: inline-block;
-    width: 45%;
-  }
-  .heading{
-    margin-bottom: 3%;
-  }
-
-  .xp{
-    margin-left: 9%;
-    font-family: sans-serif;
-  }
-  .empresa{
-    width: 36%;
-    
-    padding: 1%;
-  }
   .tempoServico{
     font-size: 70%;
   }
@@ -70,13 +47,7 @@
     font-weight: bold;
     font-size: 120%;
   }
-  .ts{
-    display: flex;
-    width: 100%;
-    margin: 0;
-    margin-top: 4%;
-  }
-  .cardP{
-    margin-left: 9%;
-    font-family: sans-serif;
+  .direita{
+    width: 60%;
+    float: right;
   }
