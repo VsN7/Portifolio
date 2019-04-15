@@ -44,6 +44,7 @@ if(target.length){
         animeScroll();
     }, 200));
 }
+
 //'nav a[href^="#habilidades"]'
 const menuItens = document.querySelectorAll('nav a');
 menuItens.forEach(item =>{
