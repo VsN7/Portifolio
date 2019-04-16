@@ -5,25 +5,39 @@
     margin-top: 4%;
   }
   nav{
-    background-color: #000;
-          opacity:0.80;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.692);
   }
+  
   #perfil{
     margin-top: 15%;
     max-width: 39%;
   }
   .cc-profile-image{
-    margin-top: 12%;
-    margin-left: 39%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
   }
+    
   #myTab{
     width: 100%;
   }
   #nome{
     color: #fff;
-    margin-top: 1%;
-    font-size: 33px;
+    margin-top: 2%;
+    font-size: 50px;
     text-align: center;
+    font-weight: bold;
+    font-family:gabriola, sans-serif;
+  }
+  #sub{
+    color: #fff;
+    margin-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
   }
   .ico{
     max-width: 40%;
