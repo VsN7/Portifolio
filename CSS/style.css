@@ -59,10 +59,10 @@
     transition: .5s;
   }
   [data-anime="left"]{
-    transform: translate3d(-3.5%,0,0)
+    transform: translate3d(-3%,0,0)
   }
   [data-anime="right"]{
-    transform: translate3d(3.5%,0,0)
+    transform: translate3d(3%,0,0)
   }
   [data-anime="top"]{
     transform: translate3d(0,50px,0)
