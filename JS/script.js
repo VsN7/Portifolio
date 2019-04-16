@@ -54,12 +54,12 @@ menuItens.forEach(item =>{
 function scrollToIdOnClick(event){
     event.preventDefault();
     const elemento = event.target;
-    console.log(elemento);
     const id = elemento.getAttribute('href');
     const to = document.querySelector(id).offsetTop;
     window.scroll({
-        top: to,
+        top: to - 80,
         behavior: "smooth"
+        
     });
 }
 

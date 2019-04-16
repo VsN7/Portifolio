@@ -30,40 +30,33 @@
   <!-- Nav tabs -->
   <!--  <img src="}?:>  'D4EDX '" class="card-img" alt="">  -->
   <div class="card bg-dark text-white">
-    <img id="fundo" src="imagens/teste9.png" class="card-img" alt="">
+    <div class="fundo">
 
+    </div>
     <div class="card-img-overlay">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a id="curriculo" class="navbar-brand" href="a">Curriculo</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-          <ul class="navbar-nav" id="myTab" role="tablist">
-            <li id="homeli" class="nav-item">
-              <a class="nav-link" id="messages-tab" href="#sobreM" aria-controls="messages" aria-selected="false">Sobre
-                Mim</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" href="#habilidades" aria-controls="profile"
-                aria-selected="false">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="settings-tab" href="#experiencias" aria-controls="settings"
-                aria-selected="false">Experiencias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="Portifolio-tab" href="#portifolio" aria-controls="Portifolio"
-                aria-selected="false">Portifólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="Contato-tab" href="#contato" aria-controls="Contato"
-                aria-selected="false">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div style="width:100%;" class="navbar-translate">
+                <a id="curriculo" class="navbar-brand" href="a">Curriculo</a>
+              <button style="float: right;" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+
+            
+            <div class="container">
+              <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                <ul class="navbar-nav" id="myTab" role="tablist">
+                  <li class="nav-item"><a class="nav-link" href="#sobreM">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#informacoes">Informações</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#experiencias">Experiências</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portifolio">Portifólio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
       <div class="cc-profile-image"><a href="#"><img id="perfil" src="imagens/ts3.png" alt="Image"></a></div>
       <p id="nome" class="font-weight-light">Vitor Santos</p>
     </div>
@@ -75,8 +68,8 @@
         class="featurette-heading">Sobre Mim</h2>
       <hr class="featurette-divider">
 
-      <div class="row featurette" data-anime="left">
-        <div class="col-md-7 order-md-2">
+      <div class="row featurette" >
+        <div class="col-md-7 order-md-2" data-anime="right">
           <p class="lead">Olá, me chamo Vitor Santos do Nascimento.<br><br>
             Atualmente estou cursando o ultimo semestre do curso superior de Análise e Desenvolvimento de Sistemas,
             Fornecido
@@ -85,7 +78,7 @@
             e consequentemente com os interesses da empresa.
           </p>
         </div>
-        <div class="col-md-5 order-md-1">
+        <div class="col-md-5 order-md-1" data-anime="left">
           <img class="d-block w-100" style="height:100%;width:100%;" src="imagens/vitor1.jpg" alt="">
         </div>
       </div>
@@ -94,18 +87,32 @@
         class="featurette-heading">Informações</h2>
       <hr class="featurette-divider">
 
-      <div class="row featurette"  data-anime="right">
-        <div class="col-md-7">
-          <div style="margin-left:3%; text-align: left">
-            <p class="lead">Data de Nascimento: <span class="direita">16/11/1996</span></p>
-            <p class="lead">Natural de:<span class="direita"> São Gabriel do Oeste</span></p>
-            <p class="lead">Estado Civil:<span class="direita"> Solteiro</span></p>
-            <p class="lead">E-mail:<span class="direita"> vitor7_sn@hotmail.com</span></p>
-            <p class="lead">Telefone:<span class="direita"> (67) 99138-2836</span></p>
-            <p class="lead">Endereço: <span class="direita">R. Takashi Tuda, 763-Nova Andradina/MS</span></p>
-          </div>
+      <div class="row featurette">
+        <div class="col-md-7" data-anime="left">
+            <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4"><p class="lead">Data de nascimento:</p></div>
+                  <div class="col-sm-8"><p class="lead"> 16/11/1996</p></div>
+                </div>
+                 <div class="row mt-3">
+                  <div class="col-sm-4"><p class="lead">Estado Civil:</p></div>
+                  <div class="col-sm-8"><p class="lead"> Solteiro</p></div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><p class="lead">Email:</p></div>
+                  <div class="col-sm-8"><p class="lead"> vitor7_sn@hotmail.com</p></div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><p class="lead">Telefone:</p></div>
+                  <div class="col-sm-8"><p class="lead"> (67) 99138-2836</p></div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-4"><p class="lead">Endereço:</p></div>
+                  <div class="col-sm-8"><p class="lead"> R. Takashi Tuda, 763-Nova Andradina/MS</p></div>
+                </div>
+              </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5" data-anime="right">
           <img class="d-block w-100" style="height:90%;width:100%;" src="imagens/informacoes.jpg" alt="">
         </div>
       </div>
@@ -114,7 +121,7 @@
     <h2 id="habilidades" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;"
       class="featurette-heading">Habilidades</h2>
     <hr class="featurette-divider">
-    <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab" data-anime="top">
+    <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab" data-anime="right">
       <section id="services" style="background-color: #eee">
         <div class="container">
           <div class="row services">
@@ -129,14 +136,8 @@
                     <h4>Programação</h4>
                     <p class="lead">Possuo conhecimento em várias linguagens de programação, estruturação e estilização.
                     </p>
-                    <ul>
-                      <li>C</li>
-                      <li>Java</li>
-                      <li>JavaScript</li>
-                      <li>PHP</li>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                    </ul>
+                    <p class="lead">
+                        C, Java, JavaScript, PHP, HTML, CSS
                     </p>
                   </div>
                 </div>
@@ -218,8 +219,8 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;" data-anime="left">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;">
+      <div class="col-md-7 order-md-2"  data-anime="right">
         <p class="nomeEmpresa">Hipermercado Extra</p>
         <p class="tituloFuncao">Operador de hipermercado</h5>
           <p class="lead">
@@ -229,7 +230,7 @@
 
           <p class="tempoServico">DEZEMBRO 2015 - NOVEMBRO 2016</p>
       </div>
-      <div class="col-md-5 order-md-1">
+      <div class="col-md-5 order-md-1" data-anime="left">
 
         <img class="d-block w-100" style="height:90%;width:100%;" src="imagens/extra.jpg" alt="">
 
@@ -240,8 +241,8 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;" data-anime="right">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;">
+      <div class="col-md-7 order-md-2" data-anime="left">
         <p class="nomeEmpresa">Sistemas Ganso</p>
         <p class="tituloFuncao">Estágiario</h5>
           <p class="lead">
@@ -254,7 +255,7 @@
 
           <p class="tempoServico">FEVEREIRO 2018 - DEZEMBRO 2018</p>
       </div>
-      <div class="col-md-5 order-md-7">
+      <div class="col-md-5 order-md-7" data-anime="right">
         <img class="d-block w-100" style="height:80%;width:100%;" src="imagens/ganso.png" alt="">
       </div>
     </div>
@@ -262,8 +263,8 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;" data-anime="left">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette" style="width: 95%;margin-left: 2%; text-align: center;">
+      <div class="col-md-7 order-md-2"  data-anime="right">
         <p class="nomeEmpresa">Instituto Federal de Mato Grosso do Sul</p>
         <p class="tituloFuncao">Monitor do curso</h5>
           <p class="lead">
@@ -273,7 +274,7 @@
           </p>
           <p class="tempoServico">FEVEREIRO 2018 - AGOSTO 2018</p>
       </div>
-      <div class="col-md-5 order-md-1">
+      <div class="col-md-5 order-md-1" data-anime="left">
 
         <img class="d-block w-100" style="height:100%;width:100%;" src="imagens/ifms.jpg" alt="">
 
@@ -284,7 +285,7 @@
       class="featurette-heading">Portifólio</h2>
     <hr class="featurette-divider">
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-light" data-anime="right">
       <div class="container">
 
         <div class="row">
@@ -392,7 +393,7 @@
     </div>
 
     <hr class="featurette-divider">
-    <h2 id="contato" style="margin-top:2%;text-align: center;font-size: 225%; font-weight: bold;"
+    <h2 id="contato" style="text-align: center;font-size: 225%; font-weight: bold;"
       class="featurette-heading">Contato</h2>
     <hr class="featurette-divider">
 
