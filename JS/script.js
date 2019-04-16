@@ -42,7 +42,7 @@ function animeScroll(){
 
 
         }
-        if(windowTop> 900){
+        if(windowTop> 1000){
             
 
             naigation.forEach(function(element){
