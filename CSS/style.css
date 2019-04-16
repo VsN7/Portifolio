@@ -19,6 +19,7 @@
     width: 100%;
   }
   #nome{
+    color: #fff;
     margin-top: 1%;
     font-size: 33px;
     text-align: center;
@@ -43,7 +44,7 @@
   }
   
 .fundo{
-  background: url('../imagens/teste9.png') no-repeat center;
+  background: url('../imagens/teste.png') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 750px;
