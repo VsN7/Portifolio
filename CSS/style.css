@@ -67,7 +67,10 @@
   background-attachment: fixed;
   height: 750px;
 }
-
+  [data-target]{
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1.5s;
+  }
   [data-anime]{
     opacity: 0;
     transition: .5s;
@@ -81,7 +84,15 @@
   [data-anime="top"]{
     transform: translate3d(0,50px,0)
   }
+
+  [data-target="nav"]{
+    background-color: rgba(0, 0, 0, 0);
+  }
   
+  [data-target].animateNav{
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+
   [data-anime].animate{
     opacity: 1;
     transform: translate3d(0px,0px,0px);
