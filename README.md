@@ -11,6 +11,7 @@ Criação do meu portifólio profissional.
 - HTML
 - CSS
 - Bootstrap
+- JavaScript
 
 ### HTML
 
@@ -425,6 +426,203 @@ Criação do meu portifólio profissional.
 </body>
 
 </html>
+
+`````
+### CSS
+
+`````css
+  a{
+    font-weight: bold;
+  }
+  .tab-pane,#nome{
+    margin-top: 4%;
+  }
+  nav{
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+  .nav-link{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .cc-profile-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+  }
+
+  #myTab{
+    width: 100%;
+  }
+  #nome{
+    color: #fff;
+    margin-top: 2%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family:gabriola, sans-serif;
+  }
+  #sub{
+    color: #fff;
+    margin-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .ico{
+    max-width: 40%;
+  }
+  .tempoServico{
+    font-size: 70%;
+  }
+  .nomeEmpresa{
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .tituloFuncao{
+    font-weight: bold;
+    font-size: 120%;
+  }
+  .direita{
+    width: 60%;
+    float: right;
+  }
+ .featurette{
+    width: 90%;
+  }
+  
+.fundo{
+  background: url('../imagens/teste.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+}
+  [data-target]{
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1.5s;
+  }
+  [data-anime]{
+    opacity: 0;
+    transition: .5s;
+  }
+  [data-anime="left"]{
+    transform: translate3d(-3%,0,0)
+  }
+  [data-anime="right"]{
+    transform: translate3d(3%,0,0)
+  }
+  [data-anime="top"]{
+    transform: translate3d(0,50px,0)
+  }
+
+  [data-target="nav"]{
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  [data-target].animateNav{
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+
+  [data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+  }
+  
+  `````
+  
+  ### JavaScript
+  
+  `````js
+  
+  
+
+
+
+const debounce = function(func, wait, immediate){
+    let timeout;
+    return function(...args){
+        const context = this;
+        const later = function(){
+            timeout = null;
+            if(!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if(callNow) func.apply(context, args);
+    };
+};
+
+
+const target = document.querySelectorAll('[data-anime]');
+const naigation = document.querySelectorAll('[data-target]');
+const animationClass = 'animate';
+const animationNav = 'animateNav';
+let i=0;
+let primeiro =0;
+function animeScroll(){
+    
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4);
+    
+    target.forEach(function(element){
+        
+        if((windowTop) > element.offsetTop){
+
+            if(primeiro ==0){
+                i=windowTop;
+                primeiro ==1;
+            }
+            element.classList.add(animationClass);
+        }else{
+            element.classList.remove(animationClass);
+
+
+        }
+        if(windowTop> 1000){
+            
+
+            naigation.forEach(function(element){
+                element.classList.add(animationNav);
+            
+        })
+        }else{
+            naigation.forEach(function(element){
+                element.classList.remove(animationNav);
+            
+        })
+        }
+        
+    })
+}
+animeScroll();
+
+if(target.length){
+    window.addEventListener('scroll', debounce(function() {
+        animeScroll();
+    }, 200));
+}
+
+//'nav a[href^="#habilidades"]'
+const menuItens = document.querySelectorAll('nav a');
+menuItens.forEach(item =>{
+    item.addEventListener('click', scrollToIdOnClick);
+})
+
+function scrollToIdOnClick(event){
+    event.preventDefault();
+    const elemento = event.target;
+    const id = elemento.getAttribute('href');
+    const to = document.querySelector(id).offsetTop;
+    window.scroll({
+        top: to - 80,
+        behavior: "smooth"
+        
+    });
+}
+
 
 `````
 
