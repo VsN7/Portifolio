@@ -12,7 +12,9 @@
     text-decoration: none;
     color: #fff;
   }
-
+head{
+  border: solid, 1px
+}
   .cc-profile-image{
     position: absolute;
     top: 50%;
@@ -73,7 +75,7 @@
   }
   [data-anime]{
     opacity: 0;
-    transition: .5s;
+    transition: .2s;
   }
   [data-anime="left"]{
     transform: translate3d(-3%,0,0)
