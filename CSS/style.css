@@ -64,7 +64,7 @@ head{
   }
   
 .fundo{
-  background: url('../imagens/teste.png') no-repeat center;
+  background: url('https://blog.conexos.com.br/wp-content/uploads/2018/10/Web-Development-1.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 750px;
