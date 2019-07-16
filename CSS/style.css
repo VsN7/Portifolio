@@ -1,131 +1,101 @@
-  a{
-    font-weight: bold;
-  }
-  .tab-pane,#nome{
-    margin-top: 4%;
-  }
-  nav{
-    color: antiquewhite;
-    background-color: rgba(0, 0, 0, 0.692);
-  }
-  .nav-item{
-    padding-top:1%;
-    padding-bottom: 1%;
-    margin-right: 3%;
-  }
-  .txte:hover{
-    text-decoration: none;
-    color: rgb(185, 185, 185);
-  }
-  .fab:hover{
-    
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-
-  .fas:hover{
-    
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-  .icon{
-    margin-bottom: 5%;
-  }
-  .lead{
-    margin-top: 5%;
-  }
-  .txte{
-    color: #fff;
-    width: 70%;
-    margin: 0;
-  }
-
-
-
+a{
+  font-weight: bold;
+}
+.tab-pane,#nome{
+  margin-top: 4%;
+}
+nav{
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+}
 head{
-  border: solid, 1px
+border: solid, 1px
 }
-  .cc-profile-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-30%);
-  }
+.cc-profile-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+}
 
-  #myTab{
-    width: 100%;
-  }
-  #nome{
-    color: #fff;
-    margin-top: 2%;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    font-family:gabriola, sans-serif;
-  }
-  #sub{
-    color: #fff;
-    margin-top: 1%;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-  }
-  .ico{
-    max-width: 40%;
-  }
-  .tempoServico{
-    font-size: 70%;
-  }
-  .nomeEmpresa{
-    font-size: 150%;
-    font-weight: bold;
-  }
-  .tituloFuncao{
-    font-weight: bold;
-    font-size: 120%;
-  }
-  .direita{
-    width: 60%;
-    float: right;
-  }
- .featurette{
-    width: 90%;
-  }
-  
+#myTab{
+  width: 100%;
+}
+#nome{
+  color: #fff;
+  margin-top: 2%;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family:gabriola, sans-serif;
+}
+#sub{
+  color: #fff;
+  margin-top: 1%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+.ico{
+  max-width: 40%;
+}
+.tempoServico{
+  font-size: 70%;
+}
+.nomeEmpresa{
+  font-size: 150%;
+  font-weight: bold;
+}
+.tituloFuncao{
+  font-weight: bold;
+  font-size: 120%;
+}
+.direita{
+  width: 60%;
+  float: right;
+}
+.featurette{
+  width: 90%;
+}
+
 .fundo{
-  background: url('https://blog.conexos.com.br/wp-content/uploads/2018/10/Web-Development-1.jpg') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 750px;
+background: url('https://blog.conexos.com.br/wp-content/uploads/2018/10/Web-Development-1.jpg') no-repeat center;
+background-size: cover;
+background-attachment: fixed;
+height: 750px;
 }
-  [data-target]{
-    background-color: rgba(0, 0, 0, 0);
-    transition: 1.5s;
-  }
-  [data-anime]{
-    opacity: 0;
-    transition: .2s;
-  }
-  [data-anime="left"]{
-    transform: translate3d(-3%,0,0)
-  }
-  [data-anime="right"]{
-    transform: translate3d(3%,0,0)
-  }
-  [data-anime="top"]{
-    transform: translate3d(0,50px,0)
-  }
+[data-target]{
+  background-color: rgba(0, 0, 0, 0);
+  transition: 1.5s;
+}
+[data-anime]{
+  opacity: 0;
+  transition: .2s;
+}
+[data-anime="left"]{
+  transform: translate3d(-3%,0,0)
+}
+[data-anime="right"]{
+  transform: translate3d(3%,0,0)
+}
+[data-anime="top"]{
+  transform: translate3d(0,50px,0)
+}
 
-  [data-target="nav"]{
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  [data-target].animateNav{
-    background-color: rgba(0, 0, 0, 0.747);
-  }
+[data-target="nav"]{
+  background-color: rgba(0, 0, 0, 0);
+}
 
-  [data-anime].animate{
-    opacity: 1;
-    transform: translate3d(0px,0px,0px);
-  }
+[data-target].animateNav{
+  background-color: rgba(0, 0, 0, 0.747);
+}
+
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px,0px,0px);
+}
