@@ -8,10 +8,41 @@
     color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.692);
   }
-  .nav-link{
-    text-decoration: none;
-    color: #fff;
+  .nav-item{
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-right: 3%;
   }
+  .txt:hover{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+  }
+  .fab:hover{
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .fas:hover{
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .icon{
+    margin-bottom: 5%;
+  }
+  .lead{
+    margin-top: 5%;
+  }
+  .txt{
+    color: #fff;
+    width: 70%;
+    margin: 0;
+    size: 20px;
+  }
+
+
+
 head{
   border: solid, 1px
 }
