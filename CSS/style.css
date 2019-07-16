@@ -13,7 +13,7 @@
     padding-bottom: 1%;
     margin-right: 3%;
   }
-  .txt:hover{
+  .txte:hover{
     text-decoration: none;
     color: rgb(185, 185, 185);
   }
@@ -34,7 +34,7 @@
   .lead{
     margin-top: 5%;
   }
-  .txt{
+  .txte{
     color: #fff;
     width: 70%;
     margin: 0;
