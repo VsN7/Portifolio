@@ -4,6 +4,7 @@ a{
 .tab-pane,#nome{
   margin-top: 4%;
 }
+
 nav{
   color: antiquewhite;
   background-color: rgba(0, 0, 0, 0.692);
@@ -69,6 +70,16 @@ background-size: cover;
 background-attachment: fixed;
 height: 750px;
 }
+
+.sobrepoe{
+  
+background-color: rgba(0, 0, 0, 0.377);
+
+background-size: cover;
+background-attachment: fixed;
+height: 750px;
+}
+
 [data-target]{
   background-color: rgba(0, 0, 0, 0);
   transition: 1.5s;
@@ -98,4 +109,92 @@ height: 750px;
 [data-anime].animate{
   opacity: 1;
   transform: translate3d(0px,0px,0px);
+}
+
+a.btn-icon {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  margin: 5px 2px;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: #FFFFFF;
+}
+
+a.btn-icon:hover {
+  color: #ffffff80;
+}
+
+.aos-animate:hover{
+  background-color: #40a249;
+  border-color: #40a249;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+.cc-profile-image a {
+  position: relative;
+}
+
+.cc-profile-image .unica:before {
+  content: "";
+  border: 15px solid rgba(20, 107, 28, 0.521);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  -webkit-animation: pulsate 1.6s ease-out;
+          animation: pulsate 1.6s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 0.0;
+  z-index: 99;
+}
+
+
+.cc-profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
