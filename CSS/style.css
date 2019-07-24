@@ -117,11 +117,11 @@ a.btn-icon {
   border-width: 2px;
   font-weight: 400;
   font-size: 0.8571em;
-  line-height: 1.35em;
+  line-height: 0.5em;
   margin: 5px 2px;
   border: none;
   border-radius: 0.1875rem;
-  padding: 11px 22px;
+  padding: 11px 16px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0);
