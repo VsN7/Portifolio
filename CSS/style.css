@@ -100,10 +100,12 @@ height: 750px;
 
 [data-target="nav"]{
   background-color: rgba(0, 0, 0, 0);
+  
 }
 
 [data-target].animateNav{
   background-color: rgba(0, 0, 0, 0.747);
+  color: white;
 }
 
 [data-anime].animate{
@@ -121,8 +123,8 @@ a.btn-icon {
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.671);
-  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0);
 }
 
 a.btn-icon:hover {
