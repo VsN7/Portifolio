@@ -1,10 +1,10 @@
-# Portifolio
+# Portfolio
 
 .![Portifólio](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShkIAgyCXFVmufBPjeuv9IUofDXLLb4EsjyBy4VV46DPO4Tni3)
 
 ## Descrição do projeto
 
-Criação do meu portifólio profissional.
+Criação do meu portfólio profissional.
 
 ### Disponivel em: https://vitorportifolio.herokuapp.com
 
