@@ -1,19 +1,15 @@
-
-
-
-
-const debounce = function(func, wait, immediate){
+const debounce = function(func, wait, immediate) {
     let timeout;
-    return function(...args){
+    return function(...args) {
         const context = this;
-        const later = function(){
+        const later = function() {
             timeout = null;
-            if(!immediate) func.apply(context, args);
+            if (!immediate) func.apply(context, args);
         };
         const callNow = immediate && !timeout;
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
-        if(callNow) func.apply(context, args);
+        if (callNow) func.apply(context, args);
     };
 };
 
@@ -22,45 +18,46 @@ const target = document.querySelectorAll('[data-anime]');
 const naigation = document.querySelectorAll('[data-target]');
 const animationClass = 'animate';
 const animationNav = 'animateNav';
-let i=0;
-let primeiro =0;
-function animeScroll(){
-    
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4);
-    
-    target.forEach(function(element){
-        
-        if((windowTop) > element.offsetTop){
+let i = 0;
+let primeiro = 0;
 
-            if(primeiro ==0){
-                i=windowTop;
-                primeiro ==1;
+function animeScroll() {
+
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+
+    target.forEach(function(element) {
+
+        if ((windowTop) > element.offsetTop) {
+
+            if (primeiro == 0) {
+                i = windowTop;
+                primeiro == 1;
             }
             element.classList.add(animationClass);
-        }else{
+        } else {
             element.classList.remove(animationClass);
 
 
         }
-        if(windowTop> 700){
-            
+        if (windowTop > 700) {
 
-            naigation.forEach(function(element){
+
+            naigation.forEach(function(element) {
                 element.classList.add(animationNav);
-            
-        })
-        }else{
-            naigation.forEach(function(element){
+
+            })
+        } else {
+            naigation.forEach(function(element) {
                 element.classList.remove(animationNav);
-            
-        })
+
+            })
         }
-        
+
     })
 }
 animeScroll();
 
-if(target.length){
+if (target.length) {
     window.addEventListener('scroll', debounce(function() {
         animeScroll();
     }, 200));
@@ -68,11 +65,11 @@ if(target.length){
 
 //'nav a[href^="#habilidades"]'
 const menuItens = document.querySelectorAll('nav a');
-menuItens.forEach(item =>{
+menuItens.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 })
 
-function scrollToIdOnClick(event){
+function scrollToIdOnClick(event) {
     event.preventDefault();
     const elemento = event.target;
     const id = elemento.getAttribute('href');
@@ -80,8 +77,6 @@ function scrollToIdOnClick(event){
     window.scroll({
         top: to - 80,
         behavior: "smooth"
-        
+
     });
 }
-
-
