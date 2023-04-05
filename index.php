@@ -1,3 +1,3 @@
 <?php
-require_once("portifolio.html");
+require_once("portifolio.html"); 
 ?>
